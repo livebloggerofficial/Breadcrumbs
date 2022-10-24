@@ -1,0 +1,45 @@
+body {
+  margin: 100px 0;
+}
+
+.breadcrumbs ul svg {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.breadcrumbs {
+  font-family: "Roboto", sans-serif;
+  padding: 10px 48px;
+  box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+
+.breadcrumbs ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.breadcrumbs ul li a:hover {
+  color: #0984e3;
+}
+
+.breadcrumbs ul li:last-child a {
+  font-weight: bold;
+}
+
+.breadcrumbs ul li a:not(:first-child):before {
+  content: ", ";
+}
+
+.breadcrumbs ul li.arrow svg {
+  width: 18px;
+}
